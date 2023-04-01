@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 
+
 public class EnemyManager : MonoBehaviour
 {
+    // public GameObject player;
     public PlayerHealth playerHealth;
     public GameObject enemy;
     public float spawnTime = 3f;
@@ -10,6 +12,7 @@ public class EnemyManager : MonoBehaviour
 
     void Start ()
     {
+        // playerHealth = player.GetComponent <PlayerHealth> ();
         InvokeRepeating("Spawn", spawnTime, spawnTime);
     }
 
