@@ -71,7 +71,6 @@ namespace CompleteProject {
      
             //Taking Damage
             if (playerHealth.currentHealth > 0) {
-                Debug.Log("masuk sini");
                 playerHealth.TakeDamage (attackDamage);
             }
         }
