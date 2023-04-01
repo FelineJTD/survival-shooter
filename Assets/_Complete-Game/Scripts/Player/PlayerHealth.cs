@@ -35,7 +35,7 @@ namespace CompleteProject {
 
         void Update () {
             //Jika terkena damaage
-            if(damaged) {
+            if (damaged) {
                 //Merubah warna gambar menjadi value dari flashColour
                 damageImage.color = flashColour;
             } else {
@@ -45,7 +45,6 @@ namespace CompleteProject {
 
             //Set damage to false
             damaged = false;
-            Debug.Log(currentHealth);
         }
 
         //fungsi untuk mendapatkan damage
@@ -62,7 +61,7 @@ namespace CompleteProject {
             playerAudio.Play ();
 
             //Memanggil method Death() jika darahnya kurang dari sama dengan 10 dan belu mati
-            if(currentHealth <= 0 && !isDead) {
+            if (currentHealth <= 0 && !isDead) {
                 Death ();
             }
         }
